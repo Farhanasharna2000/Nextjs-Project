@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+// import Navbar from './../components/Navbar';
 
 const Home = () => {
   return (
@@ -19,8 +20,18 @@ const Home = () => {
           font-semibold hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl'>
           Go to dashboard
         </Link>
+        <br />
+        <Link
+        href='/moviesdashboard'
+          className='inline-flex items-center justify-center bg-blue-600 text-white px-8 py-3 rounded-lg 
+          font-semibold hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl mt-4'>
+          Go to movies dashboard
+        </Link>
       </div>
     </div>
+    // <div>
+    //   <Navbar/>
+    // </div>
   );
 };
 
