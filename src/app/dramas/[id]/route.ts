@@ -1,4 +1,3 @@
-import { error } from "console";
 import { dramas } from "../db";
 
 export async function GET(
