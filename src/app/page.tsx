@@ -1,7 +1,11 @@
+import { Bebas_Neue } from 'next/font/google';
 import Link from 'next/link';
 import React from 'react';
 // import Navbar from './../components/Navbar';
-
+const bebasFont=Bebas_Neue({
+  subsets:['latin'],
+  weight:'400'
+})
 const Home = () => {
   return (
     <div
@@ -11,7 +15,7 @@ const Home = () => {
 
           Welcome to the dashboard app
         </h1>
-        <p className='text-lg text-gray-600 mb-8'>
+        <p className={`${bebasFont.className} text-lg text-gray-600 mb-8`}>
           Manage your tasks,track analytics,and stay organized with our powerful dashboard.
         </p>
         <Link

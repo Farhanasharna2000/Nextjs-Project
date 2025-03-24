@@ -1,6 +1,9 @@
 import Link from 'next/link';
 import React from 'react';
-
+export const metadata={
+    title:"Users Page",
+    description:"This is the users page"
+}
 const Users = () => {
     return (
         <div
